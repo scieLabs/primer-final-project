@@ -18,6 +18,10 @@
     box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.342);
 }
 
+.button:hover {
+    background: linear-gradient(125deg, rgba(255,255,255,1) 0%, rgba(131,185,66,1) 13%, rgb(60, 105, 4) 100%);
+}
+
 /* reset */
 
 /* header */
@@ -42,6 +46,76 @@
 
 /* section3 */
 
+#salad {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    row-gap: 4rem;
+}
+
+#section-salad {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.about-salad {
+    text-wrap: wrap;
+    text-align: justify;
+    align-self: center;
+    line-height: 1.5em;
+}
+
+.about-salad p {
+    font-size: small;
+    margin-top: 0.5rem;
+    max-width: 60ch;
+}
+
+.about-salad a {
+    text-decoration: none;
+    font-size: small;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(131,185,66);
+}
+
+.about-salad a:hover {
+    color: rgb(106,149,53);
+}
+
+#salad img {
+    width: 400px;
+    box-shadow: 7px 7px rgb(131,185,66);
+    border-radius: 15px;
+}
+
+#salad figure {
+    justify-self: center;
+}
+
+#about-salad1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+#about-salad2 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+#section3-salad1 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+#section3-salad2 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
 
 /* section4 */
 
