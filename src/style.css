@@ -11,7 +11,11 @@ header {
     background-image: url(img/header-background-bowl.jpg);
     color: white;
     text-align:center;
+    height: 500px;
+    background-position: center;
+    align-content: center;
 }
+
 
 .button {
     padding: 0.5em 2rem;
@@ -36,10 +40,12 @@ nav {
 nav ul li {
     display: inline;
     padding: 1rem;
+}
+
+nav ul a {
     text-decoration: none;
     color: white;
 }
-
 .logo {
     font-weight: bold;
     color: white;
