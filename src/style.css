@@ -24,12 +24,49 @@
 
 /* reset */
 
-/* header */
+header {
+    background-image: url(img/header-background-bowl.jpg);
+    color: white;
+    text-align:center;
+    height: 500px;
+    background-position: center;
+    align-content: center;
+}
 
 
+.button {
+    padding: 0.5em 2rem;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    background: rgb(255,255,255);
+    background: linear-gradient(125deg, rgba(255,255,255,1) 0%, rgba(131,185,66,1) 13%, rgba(106,149,53,1) 100%);
+    border: 2px solid rgb(120, 168, 61);
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.342);
+}
 
-/* nav */
+.header-button{
+    padding: 1rem;
+}
+nav {
+    padding: 1rem;
+}
 
+nav ul li {
+    display: inline;
+    padding: 1rem;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: white;
+}
+.logo {
+    font-weight: bold;
+    color: white;
+}
 
 
 /* hero */
