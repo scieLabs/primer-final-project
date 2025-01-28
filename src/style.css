@@ -272,6 +272,134 @@ nav ul a {
     line-height: 1.6;
     margin: 0;
 }
+
+/*** 300px -480px ***/
+@media screen and ( max-width: 480px ) {
+    .container-background-box {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .background-section {
+        flex-direction: column;
+    }
+
+    .green-section {
+        height: 15rem;
+        flex: none;
+    }
+
+    .image-section {
+        height: 15rem;
+        flex: none;
+    }
+
+    .content-bg{
+        padding: 1rem;
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .title-bg {
+        font-size: 1.5rem;
+    }
+
+    .subtitle-bg {
+        font-size: 1rem;
+        letter-spacing: .1rem;
+        margin-bottom: .6rem;
+    }
+
+    .options-bg {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
+    }
+
+    .option-icon-bg {
+        font-size: 1rem;
+    }
+
+    .option-icon-bg span {
+        font-size: .9rem;
+    }
+}
+
+/*** 481px - 768px ***/
+@media screen and ( min-width: 481px ) and ( max-width: 768px ) {
+    .content-bg{
+        padding: 1.5rem;
+        max-width: 80%;
+    }
+
+    .title-bg {
+        font-size: 1.8rem;
+    }
+
+    .subtitle-bg {
+        font-size: 1.1rem;
+        letter-spacing: .1rem;
+        margin-bottom: .6rem;
+    }
+
+    .options-bg {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .option-text-bg {
+        font-size: .9rem;
+    }
+
+}
+/*** 769px - 1279px ***/
+@media screen and ( min-width: 769px ) and ( max-width: 1279px ) {
+    .content-bg{
+        padding: 2rem;
+        max-width: 75%;
+    }
+
+    .title-bg {
+        font-size: 2rem;
+    }
+
+    .subtitle-bg {
+        font-size: 1.2rem;
+    }
+
+    .options-bg {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .option-text-bg {
+        font-size: 1rem;
+    }
+}
+
+/*** 1280px+ ***/
+@media screen and ( min-width: 1280px ) {
+    .content-bg{
+        padding: 2.5rem;
+        max-width: 60%;
+    }
+
+    .title-bg {
+        font-size: 2.5rem;
+    }
+
+    .subtitle-bg {
+        font-size: 1.3rem;
+    }
+
+    .options-bg {
+        gap: 2rem;
+    }
+}
+
 /******** Background-box Section - Ali Style End********/
 
 /* section2 */
