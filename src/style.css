@@ -295,6 +295,7 @@ footer {
 
     .about-salad {
         justify-self: center;
+        align-self: flex-end;
     }
 
     #about-salad1 {
@@ -322,6 +323,11 @@ footer {
     }
 
     #footer-img img {
+        width: 100%;
+    }
+
+    #form input {
+        margin-bottom: 0.5rem;
         width: 100%;
     }
 
