@@ -2,16 +2,88 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+   display: grid;
+}
+
+.button {
+    padding: 0.5em 2rem;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    background: rgb(255,255,255);
+    background: linear-gradient(125deg, rgba(255,255,255,1) 0%, rgba(131,185,66,1) 13%, rgba(106,149,53,1) 100%);
+    border: 2px solid rgb(131,185,66);
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.342);
+}
+
+.button:hover {
+    background: linear-gradient(125deg, rgba(255,255,255,1) 0%, rgba(131,185,66,1) 13%, rgb(60, 105, 4) 100%);
 }
 
 /* reset */
 
-/* header */
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/header-background-bowl.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: calc(0.66 * 100vw);
+    display: grid;
+    grid-template-columns:90%;
+    justify-content: center;
+}
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
 
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+}
 
-/* nav */
+.button {
+    padding: 0.5em 2rem;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    background: rgb(255,255,255);
+    background: linear-gradient(125deg, rgba(255,255,255,1) 0%, rgba(131,185,66,1) 13%, rgba(106,149,53,1) 100%);
+    border: 2px solid rgb(120, 168, 61);
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.342);
+}
 
+.header-button{
+    padding: 1rem;
+}
+nav {
+    padding: 1rem;
+}
+
+nav ul li {
+    display: inline;
+    padding: 1rem;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: white;
+}
+.logo {
+    font-weight: bold;
+    color: white;
+}
 
 
 /* hero */
@@ -19,17 +91,436 @@
 
 /* main */
 
+/****** Flexbox features - Ali Style Start ******/
+#flexbox-features {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #fff;
+}
 
-/* section1 */
+.container-flexbox-features {
+    text-align: center;
+}
 
+.container-flexbox-features h1 {
+    font-size: 2rem;
+    margin: .5rem 0;
+}
+
+.container-flexbox-features h2 {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.features {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.feature {
+    background-color: #86bc42;
+    color: #fefcff;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 15rem;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.342);
+    transition: transform .3s;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 2rem;
+    border-radius: 50%;
+    padding: .5rem;
+    background-color: #fffcfe;
+    color: #86bf3e;
+    width: 4rem;
+    margin: 0.5rem auto;
+}
+
+.feature-title {
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+.feature-description {
+    font-size: .875rem;
+    color: #545151;
+}
+
+/* .container .learn-more {
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    background: rgb(255,255,255);
+    background: linear-gradient(125deg, rgba(255,255,255,1) 0%, rgba(131,185,66,1) 13%, rgba(106,149,53,1) 100%);
+    border: 2px solid rgb(120, 168, 61);
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.342);
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.container .learn-more:hover {
+    transform: translateY(-5px);
+} */
+/****** Flexbox features - Ali Style Finish ******/
+
+/******** Background-box Section - Ali Style Start********/
+#background-box {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container-background-box {
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-height: 23rem;
+    background: #86bc42;
+    overflow: hidden;
+}
+
+.background-section {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+}
+
+.green-section {
+    flex: 1;
+    background-color: #86bc42;
+}
+
+.image-section {
+    flex: 1;
+    background-image: url('https://cdn.georgeinstitute.org/sites/default/files/2020-10/world-food-day-2020.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.content-wrapper-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.content-bg {
+    background-color: white;
+    padding: 2rem;
+    max-width: 45rem;
+    margin: 1rem auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title-bg {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+    color: #252422;
+    text-align: center;
+}
+
+.subtitle-bg {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #a8a8a8;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+.options-bg {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.option-icon-bg {
+    color: #7AB55C;
+    font-size: 1.2rem;
+}
+
+.option-icon-bg span {
+    font-size: 1rem;
+    margin-left: .7rem;
+}
+
+.option-text-bg {
+    color: #a8a8a8;
+    font-size: .8rem;
+    line-height: 1.6;
+    margin: 0;
+}
+/******** Background-box Section - Ali Style End********/
 
 /* section2 */
 
 
 /* section3 */
 
+#salad {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    row-gap: 4rem;
+    column-gap: 2rem;
+}
+
+#section-salad {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.about-salad {
+    text-wrap: wrap;
+    text-align: justify;
+    align-self: center;
+    line-height: 1.5em;
+}
+
+.about-salad p {
+    font-size: small;
+    margin-top: 0.5rem;
+    max-width: 60ch;
+}
+
+.about-salad a {
+    text-decoration: none;
+    font-size: small;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(131,185,66);
+}
+
+.about-salad a:hover {
+    color: rgb(106,149,53);
+}
+
+#salad img {
+    width: 400px;
+    box-shadow: 7px 7px rgb(131,185,66);
+    border-radius: 15px;
+}
+
+#salad figure {
+    justify-self: center;
+}
+
+#about-salad1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+#about-salad2 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+#section3-salad1 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+#section3-salad2 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
 
 /* section4 */
 
+/******** Owners Section - Ali Style start *********/
+#owners {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container-owners {
+    display: flex;
+    min-height: 25rem;
+    flex-wrap: wrap;
+}
+
+.food-section {
+    flex: 1;
+    background-color: #88bc46;
+}
+
+.food-image {
+    width: 100%;
+    height: 100%;
+}
+
+.food-image img {
+    width: 100%;
+    height: 100%;
+    min-width: 25rem;
+    object-fit: cover;
+}
+
+.content-section {
+    flex: 2;
+    background-color: #88bc46;
+    padding: 3rem;
+    color: white;
+}
+
+.content-section h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.content-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.1rem;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-width: 10rem;
+    gap: 1rem;
+}
+
+.avatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.avatar img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/******** Owners Section - Ali Style finish *********/
 
 /* footer */
+
+footer {
+    text-align: center;
+    margin: 2rem;
+}
+
+#subscribe {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    
+}
+
+#subscribe input {
+    width: 300px;
+    height: 2rem;
+    border-radius: 25px;
+    text-align: center;
+    border: 2px solid rgb(131,185,66);
+}
+
+#form {
+    align-self: center;
+}
+
+#footer-item1 p {
+    text-transform: uppercase;
+    padding-top: 0.5rem;
+    letter-spacing: 1px;
+    font-size: small;
+    justify-self: flex-start;
+
+}
+
+@media (max-width:1050px) {
+    #salad {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        row-gap: 1rem;
+        justify-items: center;
+    }
+
+    .about-salad {
+        justify-self: center;
+        align-self: flex-end;
+    }
+
+    #about-salad1 {
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+    #section3-salad1 {
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+    #section3-salad2 {
+        grid-column-start: 1;
+        grid-row-start: 4;
+    }
+    #about-salad2 {
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
+    #form input {
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width:660px) {
+    #subscribe {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #footer-img img {
+        width: 100%;
+    }
+
+    #form input {
+        margin-bottom: 0.5rem;
+        width: 100%;
+    }
+
+    #salad img {
+        max-width: 100%;
+    }
+
+}

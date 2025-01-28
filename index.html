@@ -5,15 +5,33 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="./src/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     </head>
     
     <body>
         <!-- header -->
         <header>
-            <!-- nav section -->
-            <nav>
-
+            <nav class="navbar">
+                <ul id="logo-container">
+                    <li class="logo"><a href="#">LOGO</a></li>
+                </ul>
+                <ul id="links-container">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Content</a></li>
+                    <li><a href="#">Info</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Subscribe</a></li>
+                </ul>
             </nav>
+            <section id="hero" class="section">
+                <div id="footer-img">
+                    <img src="./src/img/header-text.png" alt="header image" />
+                </div>
+                <p>Lorem Ipsum Dolor Sit Amet</p>
+                <div class="header-button">
+                    <button class="button">SHOP NOW</button>
+                </div>
+            </section>
 
             <!-- hero section-->
             <hero>
@@ -26,20 +44,97 @@
         <!-- main here -->
 
         <main>
+            <!-- Flexbox features - Ali -->
+            <section id="flexbox-features">
+                <div class="container-flexbox-features">
+                    <h1>Lorem ipsum dolor sit amet</h1>
+                    <h2>CONSECTETUR ADIPISCING ELIT</h2>
+                    <div class="features">
+                        <div class="feature">
+                            <div class="feature-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                            <div class="feature-title">Feature #1</div>
+                            <div class="feature-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia harum accusamus dolorem. Nulla!</div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon"><i class="fa-duotone fa-solid fa-compass-drafting"></i></div>
+                            <div class="feature-title">Feature #2</div>
+                            <div class="feature-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia harum accusamus dolorem. Nulla!</div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon"><i class="fa-solid fa-desktop"></i></div>
+                            <div class="feature-title">Feature #3</div>
+                            <div class="feature-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia harum accusamus dolorem. Nulla!</div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon"><i class="fa-solid fa-copy"></i></div>
+                            <div class="feature-title">Feature #4</div>
+                            <div class="feature-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia harum accusamus dolorem. Nulla!</div>
+                        </div>
+                    </div>
+                    <button type="submit" class="button">LEARN MORE</button>
+                </div>
+            </section>
             <section>
                 <!-- section 1-->
 
 
             </section>
 
-            <section>
-                <!-- section 2-->
-
+            <!-- Background-box Section - Ali -->
+            <section id="background-box">
+                <div class="container-background-box">
+                    <div class="background-section">
+                        <div class="green-section"></div>
+                        <div class="image-section"></div>
+                    </div>
+                    <div class="content-wrapper-bg">
+                        <div class="content-bg">
+                            <h1 class="title-bg">Lorem ipsum dolor sit amet</h1>
+                            <h2 class="subtitle-bg">CONSECTETUR ADIPISCING ELIT</h2>
+                            <div class="options-bg">
+                                <div class="option-bg">
+                                    <p class="option-icon-bg"><i class="fa-solid fa-utensils"><span>OPTION #1</span></i></p>
+                                    <p class="option-text-bg">
+                                        At vero eos et accusamus et iusto odio dignissimos et iusto odio dignissimos us qui blanditis assentium vel up to sum.
+                                    </p>
+                                </div>
+                                <div class="option-bg">
+                                    <span class="option-icon-bg"><i class="fa-solid fa-shirt"><span>OPTION #2</span></i></span>
+                                    <p class="option-text-bg">
+                                        At vero eos et accusamus et iusto odio dignissimos et iusto odio dignissimos us qui blanditis assentium vel up to sum.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </section>
 
-            <section>
+            <section id="section-salad">
                 <!-- section 3-->
+                <div class="grid-container" id="salad">
+                    <div class="about-salad" id="about-salad1">
+                        <h3>Sed ut perspiciatis unde omnis</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. At, molestias! Dolorem officia maxime id consequuntur, nostrum blanditiis officiis odio sunt, illo, ea rerum consectetur aliquam nemo tempore dicta explicabo quos!
+                        </p>
+                        <a href="#">Learn more...</a>
+                    </div>
+                    <figure id="section3-salad1">
+                        <img src="./src/img/section4-salad.PNG" alt="salad1" />
+                    </figure>
+                    <figure id="section3-salad2">
+                        <img src="./src/img/section5-salad.JPG" alt="salad2"/>
+                    </figure>
+                    <div class="about-salad" id="about-salad2">
+                        <h3>Nemo enim ipsam volupta</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. At, molestias! Dolorem officia maxime id consequuntur, nostrum blanditiis officiis odio sunt, illo, ea rerum consectetur aliquam nemo tempore dicta explicabo quos!
+                        </p>
+                        <a href="#">Learn more...</a>
+                    </div>
+                </div>
 
 
             </section>
@@ -50,10 +145,61 @@
 
             </section>
 
+            <!-- Owners Section - Ali -->
+            <section id="owners">
+                <div class="container-owners">
+                    <div class="food-section">
+                        <div class="food-image">
+                            <img src="https://media.istockphoto.com/id/1316145932/photo/table-top-view-of-spicy-food.jpg?s=612x612&w=0&k=20&c=eaKRSIAoRGHMibSfahMyQS6iFADyVy1pnPdy1O5rZ98=" alt="delicious-foods">
+                        </div>
+                    </div>
+                    <div class="content-section">
+                        <h1>Lorem ipsum dolor sit amet</h1>
+                        <h2>CONSECTETUR ADIPISCING ELIT</h2>
+                        <div class="testimonials">
+                            <div class="testimonial">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, veniam!
+                                </p>
+                                <h3>JOHN DOE</h3>
+                                <div class="avatar">
+                                    <img src="https://static.vecteezy.com/system/resources/previews/002/002/403/non_2x/man-with-beard-avatar-character-isolated-icon-free-vector.jpg" alt="john-doe">
+                                </div>
+                            </div>
+                            <div class="testimonial">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, veniam!
+                                </p>
+                                <h3>JANE DOE</h3>
+                                <div class="avatar">
+                                    <img src="https://static.vecteezy.com/ti/gratis-vektor/p1/2002257-schone-frau-avatar-charakter-ikone-kostenlos-vektor.jpg" alt="jane-doe">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </main>
 
         <!-- footer here-->
         <footer>
+            <div id="footer-img">
+                <img src="./src/img/footer-healthyfoods-smaller.png" alt="footer image" />
+            </div>
+
+            <div class="flex-container" id="subscribe">
+                <div id="footer-item1">
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Subscribe for more</p>
+                </div>
+                <div id="form">
+                    <form>
+                        <input id="email" type="text" name="email" placeholder="Enter your email address"/>
+                        <button class="button" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
 
 
         </footer>
