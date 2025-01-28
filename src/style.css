@@ -545,17 +545,182 @@ nav ul a {
 }
 
 .avatar {
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
     background-color: white;
 }
 
 .avatar img {
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
     overflow: hidden;
+}
+
+/*** 300px - 480px ***/
+@media screen and ( max-width: 480px ) {
+    .container-owners {
+        flex-direction: column;
+    }
+    
+    .food-image img {
+        min-width: 100%;
+    }
+    
+    .content-section {
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+    .content-section h1 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    .content-section h2 {
+        font-size: 1.1rem;
+        margin-bottom: .8rem;
+    }
+
+    .testimonials {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial {
+        align-items: center;
+        text-align: center;
+    }
+
+    .testimonial p {
+        font-size: .8rem;
+    }
+
+    .testimonial h3 {
+        font-size: .8rem;
+    }
+    
+    /* .avatar {
+        width: 2rem;
+        height: 2rem;
+    }
+    
+    .avatar img {
+        width: 2rem;
+        height: 2rem;
+    } */
+}
+
+/*** 481px - 768 px ***/
+@media screen and ( min-width: 481px ) and ( max-width: 768px ) {
+    .container-owners {
+        flex-direction: column;
+    }
+    
+    .food-image img {
+        min-width: 100%;
+    }
+    
+    .content-section {
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .content-section h1 {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+
+    .content-section h2 {
+        font-size: 1.3rem;
+        margin-bottom: .9rem;
+    }
+
+    .testimonials {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial {
+        align-items: center;
+        text-align: center;
+    }
+
+    .testimonial p {
+        font-size: 1rem;
+    }
+
+    .testimonial h3 {
+        font-size: 1rem;
+    }
+    
+    .avatar {
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    .avatar img {
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+/*** 768px - 1279px ***/
+@media screen and ( min-width: 769px ) and ( max-width: 1279px) {
+    .container-owners {
+        flex-direction: row;
+    }
+
+    .food-section {
+        flex: 3;
+    }
+    
+    .food-image img {
+        min-width: 100%;
+    }
+    
+    .content-section {
+        flex: 4;
+        padding: 3rem;
+    }
+
+    .content-section h1 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .content-section h2 {
+        font-size: 1.5rem;
+        margin-bottom: .9rem;
+    }
+
+    .testimonials {
+        flex-direction: row;
+    }
+
+    .testimonial {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .testimonial p {
+        font-size: 1rem;
+    }
+
+    .testimonial h3 {
+        font-size: 1rem;
+    }
+    
+    .avatar {
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    .avatar img {
+        width: 3rem;
+        height: 3rem;
+    }
 }
 
 /******** Owners Section - Ali Style finish *********/
