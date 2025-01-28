@@ -5,6 +5,10 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+body {
+   display: grid;
+}
+
 .button {
     padding: 0.5em 2rem;
     border-radius: 25px;
@@ -25,14 +29,27 @@
 /* reset */
 
 header {
-    background-image: url(img/header-background-bowl.jpg);
-    color: white;
-    text-align:center;
-    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/header-background-bowl.jpg);
+    background-size: cover;
     background-position: center;
-    align-content: center;
+    color: white;
+    height: calc(0.66 * 100vw);
+    display: grid;
+    grid-template-columns:90%;
+    justify-content: center;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+}
 
 .button {
     padding: 0.5em 2rem;
