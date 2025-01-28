@@ -64,7 +64,7 @@ header {
     box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.342);
 }
 
-.header-button{
+#header-button {
     padding: 1rem;
 }
 nav {
@@ -431,7 +431,116 @@ nav ul a {
 }
 
 /******** Owners Section - Ali Style finish *********/
+/******** Smoothie Section - Fernanda Style Start *********/
 
+.smoothie-pics {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    padding: 1rem 0;
+}
+
+.smoothie-pics > h2 {
+    font-size: 2rem;
+    margin: .5rem 0;
+    text-align: center;
+}
+
+.smoothie-pics > p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.smoothie-flex {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.top-left {
+    width: 50%;
+
+}
+
+.top-left > img {
+    width: 100%;
+}
+
+.top-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 50%;
+    padding: 1.5rem;
+}
+
+.top-right > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.top-right > div > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-left: 1rem;
+}
+
+.top-right > div > p {
+    line-height: 1.3rem;
+}
+
+.top-right p, .top-right ul {
+    font-size: 12px;
+    margin: 0;
+}
+
+.one-liners {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#numbers {
+    color:#86bf3e;
+}
+
+#rating {
+    height: 20px;
+    width: auto;
+}
+
+#smoothie-button {
+    width: 10rem;
+}
+
+.carrusel {  
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 11rem;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+.carrusel > div {
+    overflow: hidden;
+    height: 11rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrusel > div > img{
+    width: 100%;
+
+}
+
+
+/******** Smoothie Section - Fernanda Style End *********/
 /* footer */
 
 footer {
