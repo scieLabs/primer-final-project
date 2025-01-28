@@ -479,6 +479,7 @@ footer {
 
     .about-salad {
         justify-self: center;
+        align-self: flex-end;
     }
 
     #about-salad1 {
@@ -497,6 +498,9 @@ footer {
         grid-column-start: 1;
         grid-row-start: 3;
     }
+    #form input {
+        margin-bottom: 0.5rem;
+    }
 }
 
 @media (max-width:660px) {
@@ -506,6 +510,11 @@ footer {
     }
 
     #footer-img img {
+        width: 100%;
+    }
+
+    #form input {
+        margin-bottom: 0.5rem;
         width: 100%;
     }
 
