@@ -145,7 +145,7 @@ nav ul a {
     color: #545151;
 }
 
-.container .learn-more {
+/* .container .learn-more {
     padding: 1rem 2rem;
     border-radius: 25px;
     color: white;
@@ -162,7 +162,7 @@ nav ul a {
 
 .container .learn-more:hover {
     transform: translateY(-5px);
-}
+} */
 /****** Flexbox features - Ali Style Finish ******/
 
 /******** Background-box Section - Ali Style Start********/
