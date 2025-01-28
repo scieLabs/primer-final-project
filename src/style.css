@@ -314,6 +314,9 @@ footer {
         grid-column-start: 1;
         grid-row-start: 3;
     }
+    #form input {
+        margin-bottom: 0.5rem;
+    }
 }
 
 @media (max-width:660px) {
