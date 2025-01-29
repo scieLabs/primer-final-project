@@ -48,7 +48,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items:center;
-    justify-content:center;
+    justify-content:flex-start;
 }
 
 #header-button {
@@ -72,7 +72,9 @@ nav ul a {
     color: white;
 }
 
-
+.header-button {
+    padding: 1rem;
+}
 /* hero */
 
 
@@ -735,24 +737,25 @@ nav ul a {
 
 .smoothie-flex {
     display: flex;
-    justify-content: space-around;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 2rem;
 }
 
 .top-left {
-    width: 50%;
-
+    width: 350px;
 }
 
 .top-left > img {
-    width: 100%;
+    width: 350px;
 }
 
 .top-right {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    width: 50%;
+    width:400px ;
     padding: 1.5rem;
 }
 
@@ -797,9 +800,8 @@ nav ul a {
 }
 
 .carrusel {  
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 11rem;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 2rem;
@@ -809,13 +811,14 @@ nav ul a {
 .carrusel > div {
     overflow: hidden;
     height: 11rem;
+    width: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .carrusel > div > img{
-    width: 100%;
+    width: 250px;
 
 }
 
