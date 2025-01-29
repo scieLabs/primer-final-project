@@ -48,23 +48,10 @@ header {
     display: flex;
     flex-direction: column;
     align-items:center;
-    justify-content:center;
+    justify-content:flex-start;
 }
 
-.button {
-    padding: 0.5em 2rem;
-    border-radius: 25px;
-    color: white;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.2px;
-    background: rgb(255,255,255);
-    background: linear-gradient(125deg, rgba(255,255,255,1) 0%, rgba(131,185,66,1) 13%, rgba(106,149,53,1) 100%);
-    border: 2px solid rgb(120, 168, 61);
-    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.342);
-}
-
-.header-button{
+#header-button {
     padding: 1rem;
 }
 nav {
@@ -85,7 +72,9 @@ nav ul a {
     color: white;
 }
 
-
+.header-button {
+    padding: 1rem;
+}
 /* hero */
 
 
@@ -272,6 +261,134 @@ nav ul a {
     line-height: 1.6;
     margin: 0;
 }
+
+/*** 300px -480px ***/
+@media screen and ( max-width: 480px ) {
+    .container-background-box {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .background-section {
+        flex-direction: column;
+    }
+
+    .green-section {
+        height: 15rem;
+        flex: none;
+    }
+
+    .image-section {
+        height: 15rem;
+        flex: none;
+    }
+
+    .content-bg{
+        padding: 1rem;
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .title-bg {
+        font-size: 1.5rem;
+    }
+
+    .subtitle-bg {
+        font-size: 1rem;
+        letter-spacing: .1rem;
+        margin-bottom: .6rem;
+    }
+
+    .options-bg {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
+    }
+
+    .option-icon-bg {
+        font-size: 1rem;
+    }
+
+    .option-icon-bg span {
+        font-size: .9rem;
+    }
+}
+
+/*** 481px - 768px ***/
+@media screen and ( min-width: 481px ) and ( max-width: 768px ) {
+    .content-bg{
+        padding: 1.5rem;
+        max-width: 80%;
+    }
+
+    .title-bg {
+        font-size: 1.8rem;
+    }
+
+    .subtitle-bg {
+        font-size: 1.1rem;
+        letter-spacing: .1rem;
+        margin-bottom: .6rem;
+    }
+
+    .options-bg {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .option-text-bg {
+        font-size: .9rem;
+    }
+
+}
+/*** 769px - 1279px ***/
+@media screen and ( min-width: 769px ) and ( max-width: 1279px ) {
+    .content-bg{
+        padding: 2rem;
+        max-width: 75%;
+    }
+
+    .title-bg {
+        font-size: 2rem;
+    }
+
+    .subtitle-bg {
+        font-size: 1.2rem;
+    }
+
+    .options-bg {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .option-text-bg {
+        font-size: 1rem;
+    }
+}
+
+/*** 1280px+ ***/
+@media screen and ( min-width: 1280px ) {
+    .content-bg{
+        padding: 2.5rem;
+        max-width: 60%;
+    }
+
+    .title-bg {
+        font-size: 2.5rem;
+    }
+
+    .subtitle-bg {
+        font-size: 1.3rem;
+    }
+
+    .options-bg {
+        gap: 2rem;
+    }
+}
+
 /******** Background-box Section - Ali Style End********/
 
 /* section2 */
@@ -417,21 +534,296 @@ nav ul a {
 }
 
 .avatar {
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
     background-color: white;
 }
 
 .avatar img {
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
     overflow: hidden;
 }
 
-/******** Owners Section - Ali Style finish *********/
+/*** 300px - 480px ***/
+@media screen and ( max-width: 480px ) {
+    .container-owners {
+        flex-direction: column;
+    }
+    
+    .food-image img {
+        min-width: 100%;
+    }
+    
+    .content-section {
+        padding: 1.5rem;
+        text-align: center;
+    }
 
+    .content-section h1 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    .content-section h2 {
+        font-size: 1.1rem;
+        margin-bottom: .8rem;
+    }
+
+    .testimonials {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial {
+        align-items: center;
+        text-align: center;
+    }
+
+    .testimonial p {
+        font-size: .8rem;
+    }
+
+    .testimonial h3 {
+        font-size: .8rem;
+    }
+    
+    /* .avatar {
+        width: 2rem;
+        height: 2rem;
+    }
+    
+    .avatar img {
+        width: 2rem;
+        height: 2rem;
+    } */
+}
+
+/*** 481px - 768 px ***/
+@media screen and ( min-width: 481px ) and ( max-width: 768px ) {
+    .container-owners {
+        flex-direction: column;
+    }
+    
+    .food-image img {
+        min-width: 100%;
+    }
+    
+    .content-section {
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .content-section h1 {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+
+    .content-section h2 {
+        font-size: 1.3rem;
+        margin-bottom: .9rem;
+    }
+
+    .testimonials {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial {
+        align-items: center;
+        text-align: center;
+    }
+
+    .testimonial p {
+        font-size: 1rem;
+    }
+
+    .testimonial h3 {
+        font-size: 1rem;
+    }
+    
+    .avatar {
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    .avatar img {
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+/*** 768px - 1279px ***/
+@media screen and ( min-width: 769px ) and ( max-width: 1279px) {
+    .container-owners {
+        flex-direction: row;
+    }
+
+    .food-section {
+        flex: 3;
+    }
+    
+    .food-image img {
+        min-width: 100%;
+    }
+    
+    .content-section {
+        flex: 4;
+        padding: 3rem;
+    }
+
+    .content-section h1 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .content-section h2 {
+        font-size: 1.5rem;
+        margin-bottom: .9rem;
+    }
+
+    .testimonials {
+        flex-direction: row;
+    }
+
+    .testimonial {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .testimonial p {
+        font-size: 1rem;
+    }
+
+    .testimonial h3 {
+        font-size: 1rem;
+    }
+    
+    .avatar {
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    .avatar img {
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+/******** Owners Section - Ali Style finish *********/
+/******** Smoothie Section - Fernanda Style Start *********/
+
+.smoothie-pics {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    padding: 1rem 0;
+}
+
+.smoothie-pics > h2 {
+    font-size: 2rem;
+    margin: .5rem 0;
+    text-align: center;
+}
+
+.smoothie-pics > p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.smoothie-flex {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.top-left {
+    width: 350px;
+}
+
+.top-left > img {
+    width: 350px;
+}
+
+.top-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width:400px ;
+    padding: 1.5rem;
+}
+
+.top-right > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.top-right > div > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-left: 1rem;
+}
+
+.top-right > div > p {
+    line-height: 1.3rem;
+}
+
+.top-right p, .top-right ul {
+    font-size: 12px;
+    margin: 0;
+}
+
+.one-liners {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#numbers {
+    color:#86bf3e;
+}
+
+#rating {
+    height: 20px;
+    width: auto;
+}
+
+#smoothie-button {
+    width: 10rem;
+}
+
+.carrusel {  
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+.carrusel > div {
+    overflow: hidden;
+    height: 11rem;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrusel > div > img{
+    width: 250px;
+
+}
+
+
+/******** Smoothie Section - Fernanda Style End *********/
 /* footer */
 
 footer {
